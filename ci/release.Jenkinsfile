@@ -7,7 +7,7 @@ pipeline {
 
   environment {
     GIT_USER_NAME = 'Jenkins CI'
-    GIT_USER_EMAIL = 'jenkins@M910Q'
+    GIT_USER_EMAIL = 'ci-bot@jenkins'
   }
 
   stages {
@@ -109,7 +109,7 @@ pipeline {
             sh '''
               git checkout develop
               git pull origin develop
-              git merge --ff-only main || git merge main
+              git merge main
               git push origin develop
             '''
           }

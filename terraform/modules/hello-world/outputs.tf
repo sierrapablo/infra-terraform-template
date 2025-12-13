@@ -1,5 +1,5 @@
 # Hello World module outputs
 
 output "message" {
-    value = var.message
+  value = var.message
 }

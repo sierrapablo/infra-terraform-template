@@ -1,11 +1,11 @@
 # Hello World module
 
 resource "null_resource" "hello_world" {
-    triggers = {
-        always = 1
-    }
+  triggers = {
+    always = 1
+  }
 
-    provisioner "local-exec" {
-        command = "echo ${var.message}"
-    }
+  provisioner "local-exec" {
+    command = "echo ${var.message}"
+  }
 }

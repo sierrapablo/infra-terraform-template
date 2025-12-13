@@ -21,6 +21,9 @@ pipeline {
       steps {
         script {
           def rawVersion = sh(script: 'cat VERSION', returnStdout: true).trim()
+          if (!rawVersion.matches(/\d+\.\d+\.\d+/)) {
+            error "Invalid version format in VERSION file: '${rawVersion}'. Expected 'major.minor.patch'."
+          }
           def ver = rawVersion.tokenize('.')
 
           int major = ver[0].toInteger()

@@ -1,4 +1,4 @@
-# infra-terraform-template
+# Infrastructure as Code with Terraform
 Template for IaC with Terraform
 
 [![Latest Release](https://img.shields.io/github/v/release/sierrapablo/infra-terraform-template?logo=github&style=flat-square)](https://github.com/sierrapablo/infra-terraform-template/releases)

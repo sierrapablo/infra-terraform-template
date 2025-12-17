@@ -3,6 +3,9 @@ Template for IaC with Terraform
 
 [![Latest Release](https://img.shields.io/github/v/release/sierrapablo/infra-terraform-template?logo=github&style=flat-square)](https://github.com/sierrapablo/infra-terraform-template/releases)
 [![Stars](https://img.shields.io/github/stars/sierrapablo/infra-terraform-template?logo=github&style=flat-square)](https://github.com/sierrapablo/infra-terraform-template/stargazers)
+[![Terraform Validate](https://github.com/sierrapablo/infra-terraform-template/actions/workflows/validate.yaml/badge.svg)](https://github.com/sierrapablo/infra-terraform-template/actions/workflows/validate.yaml)
+[![Format Code](https://github.com/sierrapablo/infra-terraform-template/actions/workflows/format.yaml/badge.svg)](https://github.com/sierrapablo/infra-terraform-template/actions/workflows/format.yaml)
+
 
 > **🚧 Active Development**: This project is currently under active construction. Features, modules, and architecture are evolving and are subject to change.
 
@@ -32,7 +35,7 @@ The project is organized into several key directories, each with its own specifi
 
 ### Getting Started
 
-To get started, initialize a repository based on this template.
+To get started, initialize a repository based on this template and update VERSION to 0.0.0
 
 ## Credits
 

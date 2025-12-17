@@ -35,7 +35,7 @@ The project is organized into several key directories, each with its own specifi
 
 ### Getting Started
 
-To get started, initialize a repository based on this template and update VERSION to 0.0.0
+To get started, initialize a repository based on this template and update **VERSION** to `0.0.0`
 
 ## Credits
 

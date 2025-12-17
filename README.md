@@ -35,7 +35,11 @@ The project is organized into several key directories, each with its own specifi
 
 ### Getting Started
 
-To get started, initialize a repository based on this template and update **VERSION** to `0.0.0`
+To get started, initialize a repository based on this template **cloning only `develop` branch**, then create manually `main`: `git checkout -b main` and switch to `develop` again. After that, **update VERSION** to `0.0.0`, commit and push changes. This push manually initializes *GitHub Actions* pipelines.
+> ℹ️ Note: you can start creating branches from `develop` to implement a real *GitFlow* strategy, or you can push over `develop` like a *Trunk-based* strategy.
+
+### Use with Jenkins
+If you have a Jenkins node, you can launch releases via [release.Jenkinsfile](./ci/release.Jenkinsfile). [View Documentation](./docs/ci.md).
 
 ## Credits
 

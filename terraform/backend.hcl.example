@@ -1,0 +1,30 @@
+# Example backend.hcl file
+# Copy this file to backend.hcl and modify it to your needs
+# For init, use "terraform init -backend-config=backend.hcl"
+
+# Example backend config for localstack s3
+
+bucket         = "my-terraform-state-bucket"
+key            = "my-terraform-project/terraform.tfstate"
+region         = "us-east-1"
+
+endpoints = {
+  s3 = "http://localhost:4566"
+}
+
+access_key = "localstack"
+secret_key = "localstack"
+
+# You can use profile if you have configured it in your local machine.
+# This configuration is more portable to AWS.
+profile    = "localstack"
+
+################################################################################
+
+# Example backend config for AWS s3
+
+bucket         = "my-terraform-state-bucket"
+key            = "my-terraform-project/terraform.tfstate"
+region         = "eu-west-1"
+
+profile        = "aws-terraform" # Use your profile name
